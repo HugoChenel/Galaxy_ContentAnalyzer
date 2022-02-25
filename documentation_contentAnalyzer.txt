@@ -1,0 +1,70 @@
+==========================================================
+==========================================================
+
+README for the tool : Content Analyzer
+
+==========================================================
+==========================================================
+
+
+Galaxy is a web-based platform for biological data analysis, supporting 
+extension with additional tools (often wrappers for existing command 
+line tools) and datatypes. See http://www.galaxyproject.org/ and the 
+public server at http://usegalaxy.org for an example.
+
+==========================================================
+
+What is Content Analyzer ?
+
+==========================================================
+
+Content Analyzer is a tool which purpose is to count occurences of 
+either nucleotides or peptides in fasta files containing multiple 
+sequences. 
+
+This tool also provides information about purine and pyrimidine rates 
+for nucleotides files or amino acid counts in groups.  
+
+==========================================================
+
+Utilisation of Content Analyzer
+
+==========================================================
+
+To use this tool, only one file has to be provided at fasta format, 
+containing nucleotide sequences or peptide squences:
+	- file containing nucleotide sequences. 
+		example: 
+		>Sequence1
+		AGCGGCGCCCCCGCCGCTGCCG
+		>Sequence2
+		GTATCTGGGTGTGTGGGGTATC
+		...
+		
+	- file containing peptide sequences:
+		example:
+		>Sequence1
+		ADWWSFGVLMFEMLTGTLPFQG		
+		>Sequence2
+		AITSDDESQAMQTVGVHAITSD
+		... 
+		
+Note :
+- Nucleotide sequences can be in upper or lower case. It is not the case
+for peptide sequences
+- Nucleotide sequences of RNA sequences can be analyzed too.
+
+The file has to be uploaded in galaxy, and the type of the file must be 
+selected in the 'data type' area.
+
+==========================================================
+
+Output of Content Analyzer
+
+==========================================================
+
+The given output is a tabular separated file giving counts of 
+nucleotides or amino-acids according to the data type selected.
+
+
+

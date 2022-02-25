@@ -1,0 +1,26 @@
+<tool id="fa_content_analyzer_1" name="Compute content in nucleotide or Amino Acids" version="0.1.0">
+  <description>for each sequence in a file</description>
+  <command>python '${__tool_directory__}/contentAnalyser.py' -i '$input' -o '$output' -t '$type'</command>
+  <inputs>
+    <param format="fasta" name="input" type="data" label="Source file"/>
+    <param name="type" type="select" label="data type">
+            <option value="nucleotide">Nucleotide</option>
+            <option value="peptide">Peptide</option>
+    </param>
+  </inputs>
+  <outputs>
+    <data format="tabular" name="output" />
+  </outputs>
+
+  <tests>
+    <test>
+      <param name="input" value="fa_content_analyzer_input.fa"/>
+      <output name="outfile" file="fa_content_analyzer_output.tsv"/>
+    </test>
+  </tests>
+
+  <help>
+This tool computes GC content from a FASTA file.
+  </help>
+
+</tool>
