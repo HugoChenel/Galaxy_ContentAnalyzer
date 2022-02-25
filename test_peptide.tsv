@@ -1,0 +1,4 @@
+Seq_name	A	R	N	D	C	Q	E	G	H	I	L	K	M	F	P	S	T	W	Y	V	Aliphatic	Aromatic	Acidic	Basic	Hydroxylic	Sulphuric	Amide	Hydrophobic	Polar	Nonpolar	Charged	Length
+>sequence1	49	37	21	44	6	31	53	49	24	41	74	53	21	35	38	45	41	8	24	46	161	91	52	114	86	27	52	298	387	353	211	740
+>sequence2	64	35	16	11	10	20	36	53	13	35	81	22	19	44	40	54	44	15	19	56	172	91	36	70	98	29	36	333	295	392	117	687
+>sequence3	49	37	21	44	6	31	53	48	24	41	74	53	21	35	38	45	41	8	24	47	162	91	52	114	86	27	52	299	387	353	211	740
